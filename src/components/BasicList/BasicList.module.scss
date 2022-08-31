@@ -1,0 +1,10 @@
+.root {
+  width: 100%;
+  max-width: 360px;
+}
+
+.list_item {
+  &__selected {
+    background-color: #4361ee;
+  }
+}

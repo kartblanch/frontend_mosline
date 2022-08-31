@@ -21,7 +21,7 @@ export const Registration = () => {
             <TextField disabled defaultValue="Сотрудник" className={styles.field} label="Должность" fullWidth/>
             <TextField className={styles.field} label="Пароль" fullWidth/>
             <Button size="large" variant="contained" fullWidth>
-                Зарегистрироваться
+                Зарегистрировать
             </Button>
         </Paper>
     );

@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 
 export const Header = () => {
     const isAuth = true;
-    const isAdmin =false;
+    const isAdmin = false;
 
     const onClickLogout = () => {
     };
@@ -16,17 +16,15 @@ export const Header = () => {
         <div className={styles.root}>
             <Container maxWidth="lg">
                 <div className={styles.inner}>
-                    <a className={styles.logo} href="/">
-                        <div>Тестирование сотрудников</div>
-                    </a>
+                    <div className={styles.logo}>Тестирование сотрудников</div>
                     <div className={styles.buttons}>
                         {(() => {
                             if (isAuth && !isAdmin) {
                                 return (
                                     <>
-                                        <a href="/posts/create">
+                                        <Link to="/start-test">
                                             <Button variant="contained">Пройти тестирование</Button>
-                                        </a>
+                                        </Link>
                                         <Button onClick={onClickLogout} variant="contained" color="error">
                                             Выйти
                                         </Button>
@@ -35,23 +33,19 @@ export const Header = () => {
                             } else if (isAuth && isAdmin) {
                                 return (
                                     <>
-                                        <a href="/posts/create">
-                                            <Button variant="contained">Тесты</Button>
-                                        </a>
-                                        <a href="/posts/create">
+                                        <Link to="/add-question">
+                                            <Button variant="contained">Создать тест</Button>
+                                        </Link>
+                                        <Link to="/register">
                                             <Button variant="contained">Создать пользователя</Button>
-                                        </a>
-                                        <a href="/posts/create">
+                                        </Link>
+                                        <Link to="/">
                                             <Button variant="contained">Результаты</Button>
-                                        </a>
+                                        </Link>
                                         <Button onClick={onClickLogout} variant="contained" color="error">
                                             Выйти
                                         </Button>
                                     </>
-                                );
-                            } else {
-                                return (
-                                    <div>catch all</div>
                                 );
                             }
                         })()}
