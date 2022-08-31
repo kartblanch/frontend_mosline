@@ -1,0 +1,21 @@
+.quizCard {
+  padding: 10px;
+  margin-top: 15px;
+  color: grey;
+  text-align: center;
+}
+
+.buttonPrev {
+  float: left;
+  background-color: #fc4c4e;
+}
+
+.buttonNext {
+  float: right;
+}
+
+.totalAnswered {
+  color: red;
+  text-align: center;
+  padding-bottom: 10px;
+}
