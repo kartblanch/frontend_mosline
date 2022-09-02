@@ -19,15 +19,15 @@ export const BasicList = () => {
                     <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemText
-                                primary="Trash"
+                                primary="Тест 1"
                                 onClick={(event) => handleListItemClick(event, 0)}
-                                className={styles.list_item__selected}
+                                //className={styles.list_item__selected}
                             />
                         </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
                         <ListItemButton>
-                            <ListItemText primary="Trash2"/>
+                            <ListItemText primary="Тест 2"/>
                         </ListItemButton>
                     </ListItem>
                 </List>

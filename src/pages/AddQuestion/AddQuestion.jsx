@@ -90,10 +90,11 @@ export const AddQuestion = () => {
                         </Grid>
                         <Grid item xs={2}>
                             <Button onClick={() => deleteAnswer(index)}
-                                    size="large"
+                                    size="middle"
                                     variant="contained"
                                     color="error"
-                                    startIcon={<DeleteIcon />}>
+                                    //startIcon={<DeleteIcon />}
+                            >
                                 Удалить ответ
                             </Button>
                         </Grid>

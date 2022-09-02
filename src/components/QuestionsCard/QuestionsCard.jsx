@@ -17,9 +17,9 @@ export const QuestionsCard = () => {
     const Quest = [
         {
             "id": "1",
-            "question": "Earth moving around the sun at  ____________ per hour",
-            "answers": ["670,000 miles", "67,000 miles", "6,700 miles", "670 miles"],
-            "correctAnswer": "67,000 miles"
+            "question": "2 + 3 ?",
+            "answers": ["5", "10", "89", "12"],
+            "correctAnswer": "5"
 
         },
         {
